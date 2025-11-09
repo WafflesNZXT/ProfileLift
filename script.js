@@ -58,19 +58,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Button click handlers (you can customize these)
     const buttons = document.querySelectorAll('.btn');
     
-    buttons.forEach(button => {
-        if (!button.classList.contains('mobile-menu-btn')) {
-            button.addEventListener('click', function() {
-                const buttonText = this.textContent.trim();
-                
-                if (buttonText.includes('Get Started') || buttonText.includes('Start Your Transformation')) {
-                    alert('Get Started form would open here. You can integrate with your contact form or CRM.');
-                } else if (buttonText.includes('See How It Works') || buttonText.includes('Schedule a Consultation')) {
-                    alert('Consultation booking would open here. You can integrate with a scheduling tool like Calendly.');
-                }
-            });
-        }
-    });
+     buttons.forEach(button => {
+    if (!button.classList.contains('mobile-menu-btn')) {
+        button.addEventListener('click', function() {
+            const buttonText = this.textContent.trim();
+            
+            if (buttonText.includes('Get Started') || buttonText.includes('Start Your Transformation')) {
+                window.location.href = 'contact.html';
+            } else if (buttonText.includes('See How It Works') || buttonText.includes('Schedule a Consultation')) {
+                window.location.href = 'howitworks.html';
+            }
+        });
+    }
+});
     
     // Intersection Observer for scroll animations
     const observerOptions = {
