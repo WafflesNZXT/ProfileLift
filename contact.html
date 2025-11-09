@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ProfileLift</title>
+    <link rel="stylesheet" href="styles-contact.css">
+    <script src="script-contact.js"></script>
+    <meta name="description" content="Get in touch with ProfileLift for professional Google Business Profile optimization services.">
+</head>
+<body>
+    <!-- Response Time Banner -->
+    <div class="response-banner">
+        ⚡ We typically respond within 24 hours
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+                <img class="nav-bar-logo" src="0684456b-aa2b-4631-86f7-93ceaf33303c.jpg"><h1 class="brand-text">ProfileLift</h1>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#benefits" class="nav-link">Why Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Let's Elevate Your Business</h1>
+            <p>Ready to transform your Google Business Profile? Get in touch and let's discuss how we can help you attract more customers.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div>
+                        <h2>Get in Touch</h2>
+                        <p>Have questions about our services? Want to discuss your specific needs? We're here to help you succeed.</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-method-content">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:wafi.syed5@gmail.com">profilelift.com</a></p>
+                            <p style="margin-top: 0.25rem;">We respond within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-method-content">
+                            <h3>Location</h3>
+                            <p>Bay Area, California</p>
+                            <p style="margin-top: 0.25rem;">Serving the Bay Area</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-method-content">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9am - 6pm</p>
+                            <p style="margin-top: 0.25rem;">Weekend: By appointment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    
+                    <div class="form-success" id="successMessage">
+                        ✓ Thank you! We've received your message and will get back to you within 24 hours.
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="businessName">Business Name</label>
+                            <input type="text" id="businessName" name="businessName" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="service">Service Interested In</label>
+                            <select id="service" name="service" class="form-select">
+                                <option value="">Select a service...</option>
+                                <option value="profile-optimization">Profile Optimization</option>
+                                <option value="monthly-maintenance">Monthly Maintenance</option>
+                                <option value="consultation">Free Consultation</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your business and how we can help..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
